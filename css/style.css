@@ -547,6 +547,58 @@ button {
 .conteiner-media-footer {
   margin-right: 80px;
 }
+
+.subscribe-conteiner {
+}
+
+.subsrcibe-footer-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.02em;
+
+  color: var(--white-color);
+}
+.subscribe-form-footer {
+  display: flex;
+}
+.subscribe-input-footer {
+  padding-left: 16px;
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: inherit;
+  color: var(--white-color);
+  margin-top: 16px;
+}
+.subscribe-input-footer::placeholder {
+  color: white;
+  /* font-weight: 400; */
+  font-size: 12px;
+  line-height: 2;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+}
+.subscribe-button {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: var(--web-color);
+  color: var(--white-color);
+  padding: 8px 24px;
+  border-radius: 4px;
+  margin-left: 24px;
+  transition: background-color var(--transition);
+}
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: var(--accent-color);
+}
 /*====================================MODAL===============================*/
 .backdrop {
   position: fixed;
@@ -673,7 +725,6 @@ button {
   width: 360px;
   height: 16px;
   padding-top: 16px;
-  /* margin-left: 8px; */
 
   font-weight: 400;
   font-size: 12px;
@@ -713,6 +764,8 @@ button {
 }
 .modal-button-send {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 169px;
   height: 56px;
   font-weight: 500;
@@ -726,51 +779,10 @@ button {
   background-color: var(--web-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  transition: background-color var(--transition);
+}
+.modal-button-send:hover,
+.modal-button-send:focus {
+  background-color: var(--accent-color);
 }
 /* ==========================ГАЛОЧКА=========================== */
-.subscribe-conteiner {
-}
-
-.subsrcibe-footer-text {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-
-  letter-spacing: 0.02em;
-
-  color: var(--white-color);
-}
-.subscribe-form-footer {
-  display: flex;
-}
-.subscribe-input-footer {
-  padding-left: 16px;
-  width: 264px;
-  height: 40px;
-  border: 1px solid #ffffff;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background-color: inherit;
-  color: var(--white-color);
-  margin-top: 16px;
-}
-.subscribe-input-footer::placeholder {
-  color: white;
-  /* font-weight: 400; */
-  font-size: 12px;
-  line-height: 2;
-
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.04em;
-}
-.subscribe-button {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  background-color: var(--web-color);
-  color: var(--white-color);
-  padding: 8px 24px;
-  border-radius: 4px;
-  margin-left: 24px;
-}
