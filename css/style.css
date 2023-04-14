@@ -648,8 +648,6 @@ button {
   right: 24px;
   top: 24px;
 }
-
-/* ===========================6666666666============================================= */
 .modal-title {
   text-align: center;
   padding-top: 72px;
@@ -785,4 +783,3 @@ button {
 .modal-button-send:focus {
   background-color: var(--accent-color);
 }
-/* ==========================ГАЛОЧКА=========================== */
