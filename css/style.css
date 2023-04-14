@@ -29,6 +29,16 @@ body {
   font-size: 16px;
 }
 /*============================Загальні====================================*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
 h1,
 h2,
 h3,
@@ -473,6 +483,7 @@ button {
   padding-left: 16px;
   border-top: none;
 }
+
 /*====================================footer===============================*/
 .footer-conteiner {
   margin-right: 120px;
@@ -533,6 +544,9 @@ button {
 .conteiner-flex {
   display: flex;
 }
+.conteiner-media-footer {
+  margin-right: 80px;
+}
 /*====================================MODAL===============================*/
 .backdrop {
   position: fixed;
@@ -554,6 +568,8 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
+  padding-left: 24px;
+  padding-right: 24px;
 
   transition: transform;
   transform: translate(-50%, -50%) scale(1);
@@ -579,4 +595,182 @@ button {
   position: absolute;
   right: 24px;
   top: 24px;
+}
+
+/* ===========================6666666666============================================= */
+.modal-title {
+  text-align: center;
+  padding-top: 72px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.02em;
+
+  color: #2e2f42;
+}
+.modal-form {
+  margin-top: 16px;
+}
+.modal-value-div {
+}
+.modal-fild {
+  position: relative;
+  margin-bottom: 8px;
+}
+.modal-label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+.modal-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  margin-top: 4px;
+  padding-left: 38px;
+  transition: border var(--transition);
+}
+.modal-input:focus {
+  outline: none;
+  border: 1px solid #4d5ae5;
+}
+.input-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill var(--transition);
+}
+.modal-input:focus + .input-icon {
+  fill: #4d5ae5;
+}
+.modal-textarea {
+  resize: none;
+  height: 120px;
+  width: 100%;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin-top: 4px;
+}
+.modal-textarea:focus {
+  outline: none;
+  border: 1px solid #4d5ae5;
+}
+.modal-textarea::placeholder {
+  /* color: rgba(46, 47, 66, 0.4); */
+  color: red;
+}
+.modal-checbox {
+  display: flex;
+  padding: 0px;
+  width: 360px;
+  height: 16px;
+  padding-top: 16px;
+  /* margin-left: 8px; */
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+
+  letter-spacing: 0.04em;
+
+  color: #8e8f99;
+
+  border-radius: 4px;
+}
+.modal-checbox::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color var(--transition);
+}
+.modal-check {
+}
+.modal-check:checked + .modal-checbox::before {
+  background-color: var(--accent-color);
+  background-image: url(../images/check.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.modal-check:focus + .modal-checbox::before {
+  background-color: var(--accent-color);
+  background-image: url(../images/check.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.modal-policy {
+}
+.modal-button-send {
+  display: block;
+  width: 169px;
+  height: 56px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  border: none;
+  margin-top: 24px;
+
+  padding: 16px 32px;
+  color: var(--white-color);
+  background-color: var(--web-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+/* ==========================ГАЛОЧКА=========================== */
+.subscribe-conteiner {
+}
+
+.subsrcibe-footer-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.02em;
+
+  color: var(--white-color);
+}
+.subscribe-form-footer {
+  display: flex;
+}
+.subscribe-input-footer {
+  padding-left: 16px;
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: inherit;
+  color: var(--white-color);
+  margin-top: 16px;
+}
+.subscribe-input-footer::placeholder {
+  color: white;
+  /* font-weight: 400; */
+  font-size: 12px;
+  line-height: 2;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+}
+.subscribe-button {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: var(--web-color);
+  color: var(--white-color);
+  padding: 8px 24px;
+  border-radius: 4px;
+  margin-left: 24px;
 }
