@@ -549,6 +549,7 @@ button {
 }
 
 .subscribe-conteiner {
+  margin-left: auto;
 }
 
 .subsrcibe-footer-text {
@@ -562,6 +563,7 @@ button {
 }
 .subscribe-form-footer {
   display: flex;
+  margin-top: 16px;
 }
 .subscribe-input-footer {
   padding-left: 16px;
@@ -572,7 +574,6 @@ button {
   border-radius: 4px;
   background-color: inherit;
   color: var(--white-color);
-  margin-top: 16px;
 }
 .subscribe-input-footer::placeholder {
   color: white;
@@ -620,13 +621,11 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 72px 24px 24px;
 
   transition: transform;
   transform: translate(-50%, -50%) scale(1);
   width: 408px;
-  min-height: 576px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -647,11 +646,15 @@ button {
   position: absolute;
   right: 24px;
   top: 24px;
+  transition: background-color var(--transition), fill var(--transition);
+}
+.close-modal-btn:hover,
+.close-modal-btn:focus {
+  background-color: var(--accent-color);
+  fill: var(--white-color);
 }
 .modal-title {
   text-align: center;
-  padding-top: 72px;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -663,11 +666,10 @@ button {
 .modal-form {
   margin-top: 16px;
 }
-.modal-value-div {
-}
 .modal-fild {
   position: relative;
   margin-bottom: 8px;
+  margin-top: 4px;
 }
 .modal-label {
   font-style: normal;
@@ -682,7 +684,7 @@ button {
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  margin-top: 4px;
+
   padding-left: 38px;
   transition: border var(--transition);
 }
@@ -714,15 +716,14 @@ button {
   border: 1px solid #4d5ae5;
 }
 .modal-textarea::placeholder {
-  /* color: rgba(46, 47, 66, 0.4); */
-  color: red;
+  color: rgba(46, 47, 66, 0.4);
 }
 .modal-checbox {
   display: flex;
+  align-items: center;
   padding: 0px;
-  width: 360px;
   height: 16px;
-  padding-top: 16px;
+  margin-top: 16px;
 
   font-weight: 400;
   font-size: 12px;
@@ -736,13 +737,14 @@ button {
 }
 .modal-checbox::before {
   content: "";
-  display: block;
+  display: flex;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   cursor: pointer;
   transition: background-color var(--transition);
+  margin-right: 8px;
 }
 .modal-check {
 }
@@ -753,12 +755,10 @@ button {
   background-position: 50% 50%;
 }
 .modal-check:focus + .modal-checbox::before {
-  background-color: var(--accent-color);
-  background-image: url(../images/check.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  outline: 1px solid var(--accent-color);
 }
 .modal-policy {
+  color: var(--web-color);
 }
 .modal-button-send {
   display: block;
